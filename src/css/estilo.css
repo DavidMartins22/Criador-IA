@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box; /*define como o tamanho total de um elemento é calculado*/
+}
+
+body {
+    background: #0a2e4d; /*Cor de Fundo*/
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /*1 - Em cima e embaixo. 2 - Dos lados */
+}
+
+h1 {
+    text-align: center; /*Aliamento do Texto*/
+    font-size: 36px; /*Tamanho do Texto*/
+    color: #fff; /*Cor do Texto*/
+}
+
+h2 {
+    color: #051626;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+main {
+    display: flex; /*Coloca um do lado do outro*/
+    gap: 20px; /*espaçamento entre os itens*/
+    margin-bottom: 30px; /*cria espaçamento externo na parte inferior*/
+}
+
+.sessao-maior {
+    background: #F8F9FA;
+    width: 100%; /*Largura*/
+    border-radius: 8px; /*Arredondar a borda*/
+    padding: 30px; /*Espaçamento*/
+    height: 400px; /*Altura*/ 
+}
+
+.area-codigo {
+    background: #051626;
+    height: calc(100% - 70px);
+    border-radius: 8px;
+    padding: 20px;
+    color: #F8F9FA;
+    font-size: 14px;
+}
+
+.area-resultado {
+    background: #f8f9fa;
+    border-radius: 8px;
+    height: calc(100% - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+
+.sessao-menor {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+input {
+    width: 80%;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #051626;
+    border-radius: 6px;
+    border: 2px solid #94a3b8;
+}
+
+button {
+    background: #37e359;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f8f9fa;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #52ff74;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+/*
+top - em cima
+bottom - embaixo
+left - esquerda 
+right - direitaxz
+*/
