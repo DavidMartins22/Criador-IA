@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box; /*Modelo de Caixa*/
+}
+
+body {
+    background: #0a2e4d; /*Cor de Fundo*/
+    font-family: Arial, Helvetica, sans-serif; /*Fonte do Texto*/
+    height: 100%; /*Altura do Corpo*/
+    padding: 20px; 
+    max-width: 1200px; /*Largura Máxima*/
+    margin: 0 auto; /*Centralização do Corpo*/ /*1 - em cima e embaixo / 2 - dos lados*/
+}
+
+h1 {
+    text-align: center; /*Alinhamento de Texto*/
+    font-size: 36px; /*Tamanho da Texto*/
+    color: #ffffff; /*Cor do Texto*/
+}
+
+h2 {
+    color: #051626; 
+    margin-bottom: 20px; /*Margem Inferior*/
+    font-size: 24px; /*Tamanho da Texto*/
+}
+
+main {
+    display: flex; /*Exibição Flexível*/
+    gap: 20px; /*Espaçamento entre os Elementos*/
+    margin-bottom: 30px;
+}
+
+.sessao-maior {
+    background: #f8f9fa;
+    width: 100%; /*Largura da Seção*/
+    border-radius: 8px; /*Borda Arredondada*/
+    padding: 30px; /*Preenchimento Interno*/
+    height: 400px;  /*Altura da Seção*/
+}
+
+.area-codigo {
+    background: #051626;
+    height: calc(100% - 70px); /*Altura da Área de Código*/
+    border-radius: 8px;
+    padding: 20px;
+    color: #f8f9fa;
+    font-size: 14px;
+}
+
+.area-resultado {
+    background: #f8f9fa;
+    border-radius: 8px;
+    height: calc(100% - 70px);
+    display: flex; /*Exibição Flexível*/
+    align-items: center; /*Alinhamento Vertical*/
+    justify-content: center; /*Alinhamento Horizontal*/
+    color: #999;
+}
+
+.sessao-menor {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+input {
+    width: 80%;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #051626;
+    border-radius: 6px;
+    border: 2px solid #94a3b8; /*Borda do Input*/
+}
+
+button {
+    background: #37e359; 
+    border: none;
+    padding: 15px 40px; 
+    border-radius: 6px;
+    font-weight: bold; /*Negrito*/
+    font-size: 16px;
+    color: #f8f9fa;
+    cursor: pointer; /*Cursor de Mão ao Passar o Mouse por Cima*/ 
+    transition: 0.5s; /*Transição Suave*/
+}
+
+button:hover { /*Efeito ao Passar o Mouse por Cima*/
+    background-color: #52ff74;
+}
+
+button:active { /*Efeito ao Clicar no Botão*/
+    transform: scale(0.9); /*Efeito de Clique*/
+}
+
+/* Comentários em CSS */
+/* top - em cima
+bottom - em baixo
+left - esquerda
+right - direita
+*/
