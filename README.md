@@ -58,3 +58,4 @@ Se você é apaixonado por IA, CSS e quer fazer parte dessa mágica, suas contri
 ---
 
 ## "Deixe a IA programar, você apenas imagine!" 🧙‍♀️# Criador-IA
+# Criador-IA
