@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="./src/css/estilo.css" />
   </head>
 
-
   <body>
     <h1>✨ Criador Mágico de Animações IA</h1>
 
-    <!-- Principal / Caixa Invisiveis -->
     <main>
       <section class="sessao-maior">
         <h2>💻 Código CSS</h2>
-        <div class="area-codigo">// Aqui aparecerá o código da animação...</div>
+        <pre class="area-codigo">// Aqui aparecerá o código da animação...</pre>
       </section>
 
       <section class="sessao-maior">
         <h2>🎨 Resultado</h2>
-        <div class="area-resultado">A mágica aparecerá aqui...</div>
+        <div class="area-resultado">
+          <div class="preview-sandbox">
+            A mágica aparecerá aqui...
+          </div>
+        </div>
       </section>
     </main>
 
@@ -32,14 +34,11 @@
         placeholder="Descreva a animação que você quer... Ex:'Uma bola pulando'"
         id="animation-input"
       />
-      <button class="botao-magico" onclick="cliqueiNoBotao()">Criar Mágica ✨</button>
+      <button class="botao-magico" onclick="cliqueiNoBotao()">
+        Criar Mágica ✨
+      </button>
     </section>
+
+    <script src="./src/js/script.js"></script>
   </body>
-
-   <script src="./src/js/script.js"></script>
 </html>
-
-<!-- section = sessão
-main = principal
-div = divisão
--->

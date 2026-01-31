@@ -1,61 +1,88 @@
+/* RESET BÁSICO */
 * {
-    box-sizing: border-box; /*Modelo de Caixa*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* GARANTE TELA CHEIA */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* BODY */
 body {
-    background: #0a2e4d; /*Cor de Fundo*/
-    font-family: Arial, Helvetica, sans-serif; /*Fonte do Texto*/
-    height: 100%; /*Altura do Corpo*/
-    padding: 20px; 
-    max-width: 1200px; /*Largura Máxima*/
-    margin: 0 auto; /*Centralização do Corpo*/ /*1 - em cima e embaixo / 2 - dos lados*/
+    background: #0a2e4d;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
 }
 
+/* TÍTULOS */
 h1 {
-    text-align: center; /*Alinhamento de Texto*/
-    font-size: 36px; /*Tamanho da Texto*/
-    color: #ffffff; /*Cor do Texto*/
-}
-
-h2 {
-    color: #051626; 
-    margin-bottom: 20px; /*Margem Inferior*/
-    font-size: 24px; /*Tamanho da Texto*/
-}
-
-main {
-    display: flex; /*Exibição Flexível*/
-    gap: 20px; /*Espaçamento entre os Elementos*/
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
     margin-bottom: 30px;
 }
 
-.sessao-maior {
-    background: #f8f9fa;
-    width: 100%; /*Largura da Seção*/
-    border-radius: 8px; /*Borda Arredondada*/
-    padding: 30px; /*Preenchimento Interno*/
-    height: 400px;  /*Altura da Seção*/
+h2 {
+    color: #051626;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
+/* ÁREA PRINCIPAL */
+main {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* SEÇÕES GRANDES */
+.sessao-maior {
+    background: #f8f9fa;
+    width: 100%;
+    border-radius: 8px;
+    padding: 30px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ÁREA DE CÓDIGO */
 .area-codigo {
     background: #051626;
-    height: calc(100% - 70px); /*Altura da Área de Código*/
+    flex: 1;
     border-radius: 8px;
     padding: 20px;
     color: #f8f9fa;
     font-size: 14px;
+    overflow: auto;
+    white-space: pre-wrap;
 }
 
+/* ÁREA DE RESULTADO */
 .area-resultado {
     background: #f8f9fa;
     border-radius: 8px;
-    height: calc(100% - 70px);
-    display: flex; /*Exibição Flexível*/
-    align-items: center; /*Alinhamento Vertical*/
-    justify-content: center; /*Alinhamento Horizontal*/
-    color: #999;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
 }
 
+/* SANDBOX DA ANIMAÇÃO (ESSENCIAL) */
+.preview-sandbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+}
+
+/* SESSÃO MENOR */
 .sessao-menor {
     background: #f8f9fa;
     border-radius: 8px;
@@ -64,38 +91,33 @@ main {
     gap: 15px;
 }
 
+/* INPUT */
 input {
     width: 80%;
     padding: 15px 20px;
     font-size: 16px;
     color: #051626;
     border-radius: 6px;
-    border: 2px solid #94a3b8; /*Borda do Input*/
+    border: 2px solid #94a3b8;
 }
 
+/* BOTÃO */
 button {
-    background: #37e359; 
+    background: #37e359;
     border: none;
-    padding: 15px 40px; 
+    padding: 15px 40px;
     border-radius: 6px;
-    font-weight: bold; /*Negrito*/
+    font-weight: bold;
     font-size: 16px;
     color: #f8f9fa;
-    cursor: pointer; /*Cursor de Mão ao Passar o Mouse por Cima*/ 
-    transition: 0.5s; /*Transição Suave*/
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-button:hover { /*Efeito ao Passar o Mouse por Cima*/
+button:hover {
     background-color: #52ff74;
 }
 
-button:active { /*Efeito ao Clicar no Botão*/
-    transform: scale(0.9); /*Efeito de Clique*/
+button:active {
+    transform: scale(0.95);
 }
-
-/* Comentários em CSS */
-/* top - em cima
-bottom - em baixo
-left - esquerda
-right - direita
-*/
